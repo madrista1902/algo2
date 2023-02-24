@@ -1,0 +1,18 @@
+PROCEDURE tri_tab(var tab: array_of INTEGER)
+VAR
+   i,j, current :INTEGER: 
+BEGIN
+
+FOR i FROM 1 TO lenght.tab-1  DO
+current := tab[i]
+j:= i-1
+WHILE (j>0 AND tab[j]> current) DO 
+tab[j+1] :=tab[j] 
+j := j-1
+END_WHILE
+tab[j+1]:= current 
+//sort_tri tab
+END_FOR
+    
+END //*Sorts the given array `arr` by comparing each element with the first element in the array.
+    
